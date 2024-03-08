@@ -10,6 +10,7 @@ This project is a Spotify playlist generator that uses the Spotify API and Claud
 - Generates personalized playlists based on your mood (happy, calm, energetic, working)
 - Automatically updates playlists every 10 hours
 - Web interface for easy authentication and playlist generation
+- Current price for Claude GPT around $0.20 for one playlist
 
 ## Installation
 
@@ -48,7 +49,7 @@ This project is a Spotify playlist generator that uses the Spotify API and Claud
 
 4. Once authenticated, the application will fetch your liked songs, analyze your music taste, and generate personalized playlists based on your mood
 
-5. The playlists will be automatically updated every 10 hours
+5. The playlists will be automatically updated and regenerated everyday at 10:00 server time
 
 ## Methods
 
