@@ -20,7 +20,7 @@ This project is a Spotify playlist generator that uses the Spotify API and Claud
 
 2. Install the required dependencies:
    ```
-   pip install spotipy flask apscheduler
+   pip install spotipy flask apscheduler Flask-Session
    ```
 
 3. Set up your Spotify app credentials:
