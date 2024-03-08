@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login with Spotify</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #121212;
+            color: #1DB954;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .btn-spotify {
+            background-color: #1DB954;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .btn-spotify:hover {
+            background-color: #1ed760;
+        }
+        .container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        /* Add this to hide the spinner by default */
+        .spinner-border {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify Logo" class="logo">
+        <a href="/login" id="loginButton" class="btn btn-spotify btn-lg">Login with Spotify</a>
+        <!-- Add this spinner element -->
+        <div class="spinner-border text-success" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- Add this script to handle the button click -->
+    <script>
+        document.getElementById('loginButton').addEventListener('click', function() {
+            this.style.display = 'none'; // hide the button
+            document.querySelector('.spinner-border').style.display = 'block'; // show the spinner
+        });
+    </script>
+</body>
+</html>

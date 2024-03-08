@@ -122,3 +122,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+/app/flask_session/
+
+.idea/
